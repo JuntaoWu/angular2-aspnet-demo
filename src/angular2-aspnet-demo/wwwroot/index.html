@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour of Hero-开发环境</title>
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="lib/metismenu/dist/metismenu.css" />
+    <link rel="stylesheet" href="lib/startbootstrap-sb-admin-2/dist/css/timeline.css" />
+    <link rel="stylesheet" href="lib/startbootstrap-sb-admin-2/dist/css/sb-admin-2.css" />
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="lib/morrisjs/morris.css" />
+
+    <script src="lib/npmlibs/systemjs/system.src.js"></script>
+    <script src="lib/npmlibs/es6-shim/es6-shim.js"></script>
+    <script src="lib/npmlibs/systemjs/system-polyfills.src.js"></script>
+
+    <script src="lib/npmlibs/rxjs/Rx.js"></script>
+    <script src="lib/npmlibs/zone.js/zone.js"></script>
+    <script src="lib/npmlibs/reflect-metadata/Reflect.js"></script>
+</head>
+<body>
+    <toh-app>
+        Loading...
+    </toh-app>
+
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="lib/metismenu/dist/metismenu.js"></script>
+    <script src="lib/raphael/raphael.js"></script>
+    <script src="lib/morrisjs/morris.js"></script>
+    <script src="lib/startbootstrap-sb-admin-2/dist/js/sb-admin-2.js"></script>
+
+    <script src="js/system.config.js"></script>
+    <script>
+        System.import('./main')
+            .catch(function (err) {
+                console.error.bind(console)
+            });
+    </script>
+</body>
+</html>
