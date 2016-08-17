@@ -6,6 +6,7 @@
 /// <reference path="app/heroes/hero-list/hero-list.component.js" />
 /// <reference path="app/heroes/index.js" />
 /// <reference path="app/heroes/shared/index.js" />
+/// <reference path="app/heroes/shared/ng2-rating.accessor.js" />
 /// <reference path="app/heroes/shared/ng2-rating.component.js" />
 /// <reference path="app/shared/index.js" />
 /// <reference path="app/shared/nav/index.js" />
