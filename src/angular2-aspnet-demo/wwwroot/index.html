@@ -17,7 +17,7 @@
     <script src="lib/npmlibs/es6-shim/es6-shim.js"></script>
     <script src="lib/npmlibs/systemjs/system-polyfills.src.js"></script>
 
-    <script src="lib/npmlibs/rxjs/Rx.js"></script>
+    <script src="lib/npmlibs/rxjs/bundles/Rx.js"></script>
     <script src="lib/npmlibs/zone.js/zone.js"></script>
     <script src="lib/npmlibs/reflect-metadata/Reflect.js"></script>
 </head>
@@ -35,7 +35,7 @@
 
     <script src="js/system.config.js"></script>
     <script>
-        System.import('./main')
+        System.import('./main.js')
             .catch(function (err) {
                 console.error.bind(console)
             });

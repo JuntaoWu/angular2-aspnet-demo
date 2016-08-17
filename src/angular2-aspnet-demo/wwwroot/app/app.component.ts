@@ -6,16 +6,17 @@ import { Component, OnInit, ViewContainerRef } from "@angular/core";
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from "@angular/router-deprecated";
 
 import { HeroesComponent } from "./heroes/index";
+import { NavComponent } from "./shared/nav/index";
 
 @Component({
     selector: "toh-app",
-    templateUrl: `
+    template: `
         <div><toh-nav></toh-nav></div>
         <div id="page-wrapper">
             <router-outlet></router-outlet>
         </div>
     `,
-    directives: [ROUTER_DIRECTIVES],
+    directives: [ROUTER_DIRECTIVES, NavComponent],
     providers: [ROUTER_PROVIDERS]
 })
 @RouteConfig([

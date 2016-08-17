@@ -1,0 +1,7 @@
+﻿<div class="ng-rating-container">
+    <span class="ng-rating-item" *ngFor="let item of [1, 2, 3, 4, 5]; let i = index" (click)="changeRating(i)">
+        <i class="full fa fa-star" *ngIf="(i + 1) <= rating"></i>
+        <i class="half fa fa-star-half" *ngIf="(i + 0.5) == rating"></i>
+        <i class="empty fa fa-star-o" *ngIf="i >= rating"></i>
+    </span>
+</div>

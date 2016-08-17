@@ -11,7 +11,7 @@
     // packages tells the System loader how to load when no filename and/or no extension
     var packages = {
         'rxjs': { main: 'Rx', defaultExtension: 'js' },
-        'js': { defaultExtension: 'js' },
+        'app': { defaultExtension: 'js' },
         'lib': { defaultExtension: 'js' }
     };
 
@@ -25,7 +25,8 @@
         '@angular/router',
         '@angular/router-deprecated',
         '@angular/testing',
-        '@angular/upgrade'
+        '@angular/upgrade',
+        '@angular/forms'
     ];
 
     // add package entries for angular packages in the form '@angular/common': { main: 'index.js', defaultExtension: 'js' }
