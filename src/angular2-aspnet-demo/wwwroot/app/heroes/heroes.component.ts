@@ -9,4 +9,8 @@ import { Ng2RatingComponent } from "./shared/index";
 })
 export class HeroesComponent {
     private score: number = 0;
+
+    onRatingChange($event) {
+        this.score = $event;
+    }
 }

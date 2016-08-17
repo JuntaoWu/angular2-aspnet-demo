@@ -15,7 +15,13 @@ export class Ng2RatingComponent {
     }
 
     changeRating(index) {
-
+        if ((index + 1) != this.rating) {
+            this.rating = index + 1;
+        }
+        else {
+            this.rating = index + 0.5;
+        }
+        this.ratingChange.emit(this.rating);
     }
 
     writeValue(value) {
